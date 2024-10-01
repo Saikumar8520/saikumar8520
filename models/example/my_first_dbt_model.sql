@@ -13,7 +13,11 @@ with source_data as (
 
     select 1 as id
     union all
+<<<<<<< HEAD
+    select null as id
+=======
     select 2 as id
+>>>>>>> d10f8f9ed8368c6b97f75c77f6db872211433d01
 
 )
 
