@@ -19,6 +19,9 @@ with source_data as (
 <<<<<<< HEAD
     select null as id
 =======
+<<<<<<< HEAD
+    select null as id
+=======
     select 2 as id
 >>>>>>> d10f8f9ed8368c6b97f75c77f6db872211433d01
 >>>>>>> 872123fdf57b38342dc6df28d4a5280a7e8eecb8
