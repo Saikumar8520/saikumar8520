@@ -14,6 +14,9 @@ with source_data as (
     select 1 as id
     union all
 <<<<<<< HEAD
+    select 12 as id
+=======
+<<<<<<< HEAD
     select null as id
 =======
 <<<<<<< HEAD
