@@ -1,6 +1,30 @@
 
 version: 2
 
+<<<<<<< HEAD
+=======
+sources:
+  - name: HOCKEYDB_S
+    database: HOCKEYDB
+    schema: HOCKEY
+    tables:
+      - name: AWARDSCOACHES
+      - name : COACHES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 561ffc99453a3fe28e1ef3e5637b605e66fe4058
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
