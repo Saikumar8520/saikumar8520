@@ -1,6 +1,33 @@
 
 version: 2
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+sources:
+  - name: HOCKEYDB_S
+    database: HOCKEYDB
+    schema: HOCKEY
+    tables:
+      - name: AWARDSCOACHES
+      - name : COACHES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 561ffc99453a3fe28e1ef3e5637b605e66fe4058
+>>>>>>> f7e31b89df9bf9e60e0c4b967763491840119062
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
@@ -19,6 +46,7 @@ models:
             tests:
                 - unique
                 - not_null
+<<<<<<< HEAD
 
 sources:
   - name: HOCKEYDB
@@ -35,3 +63,5 @@ sources:
             description: 'Abbreviation code'
           - name : fullname
             description: 'full name of team'
+=======
+>>>>>>> f7e31b89df9bf9e60e0c4b967763491840119062
