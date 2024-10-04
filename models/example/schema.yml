@@ -3,6 +3,8 @@ version: 2
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 sources:
   - name: HOCKEYDB_S
     database: HOCKEYDB
@@ -25,6 +27,7 @@ sources:
 
 
 >>>>>>> 561ffc99453a3fe28e1ef3e5637b605e66fe4058
+>>>>>>> f7e31b89df9bf9e60e0c4b967763491840119062
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
@@ -43,3 +46,22 @@ models:
             tests:
                 - unique
                 - not_null
+<<<<<<< HEAD
+
+sources:
+  - name: HOCKEYDB
+    description: 'RAW DATA FROM HOCKEY DB'
+    database: HOCKEYDB
+    schema: HOCKEY
+    tables:
+      - name: ABBREV
+        description: 'table contains the hockey team abbreviations'
+        columns:
+          - name: TYPE
+            description: 'type of abbreviation'
+          - name: CODE
+            description: 'Abbreviation code'
+          - name : fullname
+            description: 'full name of team'
+=======
+>>>>>>> f7e31b89df9bf9e60e0c4b967763491840119062
