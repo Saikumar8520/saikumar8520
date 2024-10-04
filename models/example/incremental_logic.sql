@@ -5,7 +5,7 @@
     )
 }}
 
-select 	ID ::NUMBER(38,0) as id,
+select 	distinct ID ::NUMBER(38,0) as id,
 	NAME:: VARCHAR(255) as name ,
 	POSITION ::VARCHAR(255)AS POSITION ,
 	DEPARTMENT ::VARCHAR(255) AS DEPARTMENT,
