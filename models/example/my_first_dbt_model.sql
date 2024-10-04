@@ -23,6 +23,9 @@ with source_data as (
     select null as id
 =======
 <<<<<<< HEAD
+    select null as id
+=======
+<<<<<<< HEAD
     select 12 as id
 =======
 <<<<<<< HEAD
@@ -37,6 +40,7 @@ with source_data as (
 >>>>>>> 561ffc99453a3fe28e1ef3e5637b605e66fe4058
 >>>>>>> f7e31b89df9bf9e60e0c4b967763491840119062
 >>>>>>> 173aa4318ccbf3e17c208d9591178520f392c47f
+>>>>>>> b5a39cf4394cb6ac9c9ea0a3ea92124d9ad1f297
 
 )
 
@@ -51,8 +55,12 @@ from source_data
 -- where id is not null
 =======
 <<<<<<< HEAD
+-- where id is not null
+=======
+<<<<<<< HEAD
 
 =======
 -- where id is not null
 >>>>>>> f7e31b89df9bf9e60e0c4b967763491840119062
 >>>>>>> 173aa4318ccbf3e17c208d9591178520f392c47f
+>>>>>>> b5a39cf4394cb6ac9c9ea0a3ea92124d9ad1f297
