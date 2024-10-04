@@ -18,3 +18,9 @@ sources:
             description: 'full name of team'
       - name: AWARDSCOACHES
         description: 'contains coaches info'
+
+  - name: prod
+    database : TRAINING
+    schema: dbt_sjampala
+    tables:
+      - name : employee_details
