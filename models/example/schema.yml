@@ -1,8 +1,5 @@
 
 version: 2
-
-<<<<<<< HEAD
-=======
 sources:
   - name: HOCKEYDB
     description: 'RAW DATA FROM HOCKEY DB'
