@@ -1,0 +1,37 @@
+
+version: 2
+
+models:
+    - name: my_first_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: my_second_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+sources:
+  - name: HOCKEYDB
+    description: 'RAW DATA FROM HOCKEY DB'
+    database: HOCKEYDB
+    schema: HOCKEY
+    tables:
+      - name: ABBREV
+        description: 'table contains the hockey team abbreviations'
+        columns:
+          - name: TYPE
+            description: 'type of abbreviation'
+          - name: CODE
+            description: 'Abbreviation code'
+          - name : fullname
+            description: 'full name of team'
