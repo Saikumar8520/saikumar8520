@@ -40,3 +40,9 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+seeds:
+  my_dbt_project:
+    city:
+      schema: DBT_SJAMPALA 
+    item:
+      schema: DBT_SJAMPALA
