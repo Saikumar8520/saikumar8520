@@ -11,7 +11,6 @@ WITH source_data AS (
     FROM {{ source('HOCKEYDB', 'ABBREV') }}
     WHERE TYPE IN ('Division', 'Playoffs')
 )
-
 SELECT *
 FROM source_data
 

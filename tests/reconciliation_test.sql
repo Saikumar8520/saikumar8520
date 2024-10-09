@@ -1,0 +1,22 @@
+
+--with source_count as (
+--    select count(*) as record_count
+--    from {{ source('HOCKEYDB', 'AWARDSCOACHES') }}
+--),
+--
+--target_count as (
+--    select count(*) as record_count
+--    from {{ ref("table_1") }}  
+--)
+--
+--,test_1 as (
+--select 
+--    (select record_count from source_count) as source_count,
+--    (select record_count from target_count) as target_count,
+--    case 
+--        when (select record_count from source_count) = (select record_count from target_count) then 'MATCH'
+--        else 'MISMATCH'
+--    end as reconciliation_status
+--)
+--select * from test_1 where reconciliation_status ilike 'MISMATCH'
+

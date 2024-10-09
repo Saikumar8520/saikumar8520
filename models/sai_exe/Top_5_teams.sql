@@ -12,6 +12,7 @@ select
 from  {{ source('HOCKEYDB', 'TEAMS') }} a
 join   {{ source('HOCKEYDB', 'SCORING') }} b
 on a.tmid = b.tmid
+and a.year=b.year
 where b.year=2011
 group by 1,2
 )

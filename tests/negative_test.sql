@@ -1,0 +1,1 @@
+select  sales from {{ ref('month_wise_profit') }} where sales<0
