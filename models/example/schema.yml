@@ -2,7 +2,7 @@
 version: 2
 
 sources:
-  - name: HOCKEYDB
+  - name: HOCKEYDBS
     description: 'RAW DATA FROM HOCKEY DB'
     database: HOCKEYDB
     schema: HOCKEY

@@ -10,11 +10,11 @@ select 	distinct ID ::NUMBER(38,0) as id,
 	POSITION ::VARCHAR(255)AS POSITION ,
 	DEPARTMENT ::VARCHAR(255) AS DEPARTMENT,
 	SALARY ::NUMBER(38,0) AS SALARY,
-	RECEIVED_AT ::TIMESTAMP_ltz(9) AS UPDATED_AT
+	RECEIVED_AT ::TIMESTAMP_ltz(9) AS UPDATED_AT,
+    ACTIVE_FLAG :: varchar(1) ACTIVE_FLAG
+
     from {{source('prod','employee_details')}}
 
 {% if is_incremental() %}
-    -- this filter will only be applied on an incremental run
-    where UPDATED_AT > (select max(UPDATED_AT) from {{ this }}) 
+    where UPDATED_AT > (select dateadd(day, -7, max(UPDATED_AT)) from {{ this }}) and ACTIVE_FLAG='Y'
 {% endif %}
-
